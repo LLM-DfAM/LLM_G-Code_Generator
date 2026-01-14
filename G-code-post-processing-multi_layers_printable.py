@@ -109,10 +109,10 @@ if __name__ == "__main__":
     start_time = time.perf_counter()
 
     # 1. Set up the source file (0.2mm single-layer G-code file)
-    source_gcode = "DeepSeek-G-Coder_generate_gcode_files-full/GPU0_DeepSeek_module-1.12_teeth_count-16_bore_diameter-5.53.gcode"
+    source_gcode = "DeepSeek-G-Coder_generate_gcode_files-filled/GPU0_DeepSeek_module-1.12_teeth_count-16_bore_diameter-5.53.gcode"
 
     # 2. Set up the target file
-    output_gcode = "DeepSeek-G-Coder_generate_gcode_files-full/multi_layers_with_infill_GPU0_DeepSeek_module-1.12_teeth_count-16_bore_diameter-5.53.gcode"
+    output_gcode = "DeepSeek-G-Coder_generate_gcode_files-printable/GPU0_DeepSeek_module-1.12_teeth_count-16_bore_diameter-5.53.gcode"
 
     # 3. Parameters config
     TARGET_LAYERS = 20

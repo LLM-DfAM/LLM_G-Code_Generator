@@ -6,15 +6,15 @@ from shapely.geometry import Polygon, LineString, MultiLineString, LinearRing
 from shapely.ops import unary_union
 
 # ================= Configuration =================
-INPUT_FILE = "DeepSeek-G-Coder_generate_gcode_files/GPU0_DeepSeek_module-1.12_teeth_count-16_bore_diameter-5.53.gcode"
-OUTPUT_FILE = "DeepSeek-G-Coder_generate_gcode_files-full/GPU0_DeepSeek_module-1.12_teeth_count-16_bore_diameter-5.53.gcode"
+INPUT_FILE = "DeepSeek-G-Coder_generate_gcode_files-complete/GPU0_DeepSeek_module-1.12_teeth_count-16_bore_diameter-5.53.gcode"
+OUTPUT_FILE = "DeepSeek-G-Coder_generate_gcode_files-filled/GPU0_DeepSeek_module-1.12_teeth_count-16_bore_diameter-5.53.gcode"
 
 
 # --- Print config ---
 LAYER_HEIGHT = 0.20
 LINE_WIDTH = 0.45
 TRAVEL_SPEED = 42000
-PRINT_SPEED = 1473.915  # OrcaSlicer
+PRINT_SPEED = 1473.915  # refer to OrcaSlicer
 
 # --- Filament config ---
 FILAMENT_DIAMETER = 1.75
@@ -236,7 +236,7 @@ def process_file():
 
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         f.write(new_content)
-    print(f"✅ Generation completed: {OUTPUT_FILE}")
+    print(f"Generation completed: {OUTPUT_FILE}")
 
 
 if __name__ == "__main__":
