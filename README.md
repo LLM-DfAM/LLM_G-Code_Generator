@@ -1,6 +1,6 @@
 ## LLM-G-Code-Generator
 
-**Official implementation of the paper: "Large language models for G-Code generation in design for additive manufacturing"**
+**Code and dataset for the paper: "Large language models for G-Code generation in design for additive manufacturing"**
 
 This repository provides an end-to-end framework for generating 3D printing G-code directly from design parameters using Large Language Models (LLMs). All scripts are located in the root directory for ease of use.
 
@@ -84,7 +84,7 @@ The dataset is located in the dataset/ directory. It contains 5,898 pairs of par
 │   └── test/                               # Test set (5%)
 │
 ├── requirements.txt                        # Python dependencies
-├── images/                                 # 
+├── images/                                 # Visualization plots (Loss & PPL)
 │
 ├── [Model Fine-tuning Scripts]
 ├── model_training_Qwen1-G-Coder.py         # Fine-tuning script for Qwen1-G-Coder
