@@ -10,25 +10,33 @@ This repository provides an end-to-end framework for generating 3D printing G-co
 
 Install the required dependencies.
 
+```bash
 pip install -r requirements.txt
+```
 
 ### 2. Model Fine-tuning
 
 Run the training script for the desired model (e.g., Qwen1-G-Coder).
 
+```bash
 python model_training_Qwen1-G-Coder.py
+```
 
 ### 3. Model Evaluation
 
 Calculate the Cross Entropy Loss and Perplexity (PPL) on the validation and test sets (e.g., Qwen1-G-Coder).
 
+```bash
 python model_evaluate_Qwen1-G-Coder.py
+```
 
 ### 4. Model Inference
 
 Generate raw G-code using the fine-tuned model (e.g., Qwen1-G-Coder).
 
+```bash
 python model_inference_Qwen1-G-Coder.py
+```
 
 ### 5. Post-Processing
 
@@ -38,19 +46,25 @@ To generate a printable .gcode file, you must run the following three scripts in
 
 Completes the G-code with machine start/end sequences.
 
+```bash
 python G-code-post-processing-complete.py
+```
 
 #### Step 2: Path Filling 
 
 Optimizes the single-layer path for closed loops.
 
+```bash
 python G-code-post-processing-single_layer_filled.py
+```
 
 #### Step 3: Multi-layer Stacking 
 
 Extrudes the 2D path into a 3D volume (e.g., 20 layers) to create the final printable file.
 
+```bash
 python G-code-post-processing-multi_layers_printable.py
+```
 
 
 ## 💾 Dataset
@@ -70,6 +84,7 @@ The dataset is located in the dataset/ directory. It contains 5,898 pairs of par
 │   └── test/                               # Test set (5%)
 │
 ├── requirements.txt                        # Python dependencies
+├── images/                                 # 
 │
 ├── [Model Fine-tuning Scripts]
 ├── model_training_Qwen1-G-Coder.py         # Fine-tuning script for Qwen1-G-Coder
@@ -98,6 +113,7 @@ The dataset is located in the dataset/ directory. It contains 5,898 pairs of par
 ├── Qwen2-G-Coder_generate_gcode_files_printable/       # Qwen2-G-Coder Final printable G-codes
 ├── DeepSeek-G-Coder_generate_gcode_files/              # DeepSeek-G-Coder Raw LLM outputs (Core toolpath only)
 ├── DeepSeek-G-Coder_generate_gcode_files_printable/    # DeepSeek-G-Coder Final printable G-codes
+
     
 
 
