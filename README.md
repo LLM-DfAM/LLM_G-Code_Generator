@@ -80,7 +80,7 @@ The dataset is located in the dataset/ directory. It contains 5,898 pairs of par
 │   └── stl_files/                          # Original CAD models (.stl)
 │   ├── gcode_files/                        # Original slicer outputs (.gcode)
 │   ├── train/                              # Training set (90%)
-│   ├── val/                                # Validation set (5%)
+│   ├── validation/                         # Validation set (5%)
 │   └── test/                               # Test set (5%)
 │
 ├── requirements.txt                        # Python dependencies
