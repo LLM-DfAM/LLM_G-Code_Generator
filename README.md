@@ -114,7 +114,18 @@ The dataset is located in the dataset/ directory. It contains 5,898 pairs of par
 ├── DeepSeek-G-Coder_generate_gcode_files/              # DeepSeek-G-Coder Raw LLM outputs (Core toolpath only)
 ├── DeepSeek-G-Coder_generate_gcode_files_printable/    # DeepSeek-G-Coder Final printable G-codes
 
-    
+ ```
+```markdown
+
+## 📊 Results & Visualization
+
+### 1. Training Loss Comparison
+![Training Loss](images/Training_Loss.png)
+*Figure 1: Comparison of training loss convergence across three LLMs.*
+
+### 2. Loss & PPL Analysis
+![Loss and PPL](images/Model_Evaluation_Metrics.png)
+*Figure 2: Loss and Perplexity (PPL) metrics of the dataset.*   
 
 
 
