@@ -99,7 +99,7 @@ def generate_multi_layer_gear(
         out.write(safety_footer_prefix)
         out.write(footer_part_fixed.strip())
 
-    print(f"✅ Generation completed: {output_file_path}")
+    print(f"Generation completed: {output_file_path}")
 
 
 # ==========================================
